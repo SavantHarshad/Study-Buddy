@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>StudyBuddy</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+    <div class="app">
+
+        <aside class="sidebar">
+
+            <h2>StudyBuddy</h2>
+
+            <button onclick="setMode('ask')">
+                Ask
+            </button>
+
+            <button onclick="setMode('quiz')">
+                Quiz
+            </button>
+
+            <button onclick="setMode('answer')">
+                Answer Quiz
+            </button>
+
+            <button onclick="setMode('flashcards')">
+                Flashcards
+            </button>
+
+            <button onclick="setMode('reveal')">
+                Reveal Flashcard
+            </button>
+
+            <button onclick="setMode('study')">
+                Study
+            </button>
+
+            <button onclick="setMode('recommend')">
+                Recommend
+            </button>
+
+        </aside>
+
+        <main class="main">
+
+            <div class="topbar">
+
+                <select id="subject">
+
+                    <option>general</option>
+                    <option>biology</option>
+                    <option>physics</option>
+                    <option>history</option>
+                    <option>business</option>
+
+                </select>
+
+                <select id="difficulty">
+
+                    <option>easy</option>
+                    <option selected>
+                        medium
+                    </option>
+                    <option>hard</option>
+
+                </select>
+
+                <select id="language">
+
+                    <option>english</option>
+                    <option>hindi</option>
+                    <option>marathi</option>
+                    <option>tamil</option>
+
+                </select>
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        id="bilingual"
+                    >
+
+                    Bilingual
+
+                </label>
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        id="voice"
+                    >
+
+                    Voice
+
+                </label>
+
+            </div>
+
+            <section class="content">
+
+                <h1 id="modeTitle">
+                    Ask Mode
+                </h1>
+
+                <textarea
+                    id="inputBox"
+                    placeholder="Type here..."
+                ></textarea>
+
+                <button
+                    class="runButton"
+                    onclick="runMode()"
+                >
+                    Run
+                </button>
+
+                <div id="output"></div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

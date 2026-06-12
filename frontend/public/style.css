@@ -1,0 +1,222 @@
+* {
+
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+
+    background: #111;
+
+    color: white;
+
+    font-family: sans-serif;
+}
+
+.app {
+
+    display: flex;
+
+    min-height: 100vh;
+}
+
+.sidebar {
+
+    width: 240px;
+
+    background: #1a1a1a;
+
+    padding: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.sidebar h2 {
+
+    margin-bottom: 20px;
+}
+
+.sidebar button {
+
+    background: #333;
+
+    color: white;
+
+    border: none;
+
+    padding: 14px;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+}
+
+.sidebar button:hover {
+
+    background: #444;
+}
+
+.main {
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.topbar {
+
+    background: #1f1f1f;
+
+    padding: 15px;
+
+    display: flex;
+
+    gap: 15px;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    border-bottom: 1px solid #333;
+}
+
+.topbar select {
+
+    background: #333;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px;
+
+    border-radius: 6px;
+}
+
+.topbar label {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+}
+
+.content {
+
+    padding: 20px;
+
+    flex: 1;
+}
+
+#modeTitle {
+
+    margin-top: 0;
+}
+
+textarea {
+
+    width: 100%;
+
+    height: 180px;
+
+    background: #222;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 10px;
+
+    padding: 15px;
+
+    font-size: 16px;
+
+    resize: vertical;
+}
+
+.runButton {
+
+    margin-top: 15px;
+
+    background: #4CAF50;
+
+    color: white;
+
+    border: none;
+
+    padding: 14px 24px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+.runButton:hover {
+
+    opacity: 0.9;
+}
+
+#output {
+
+    margin-top: 20px;
+
+    background: #1f1f1f;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    white-space: pre-wrap;
+
+    min-height: 250px;
+
+    overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+
+    .app {
+
+        flex-direction: column;
+    }
+
+    .sidebar {
+
+        width: 100%;
+
+        flex-direction: row;
+
+        overflow-x: auto;
+    }
+
+    .sidebar button {
+
+        min-width: 140px;
+    }
+
+    .topbar {
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    textarea {
+
+        height: 140px;
+    }
+}
