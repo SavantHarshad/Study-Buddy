@@ -247,7 +247,3 @@ Recommended:
 - Multi-user support
 
 ---
-
-# License
-
-MIT License
